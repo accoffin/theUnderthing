@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Adventurer;
+    src: url('/assets/Adventurer.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url(), default;
+    font-family: Adventurer;
+    /* cursor: url(), default; */
 }
 
 body {
@@ -14,13 +20,48 @@ body {
     background-color: #252E4A;
 }
 
-#game-canvas {
+#game-container {
     width: 800px;
     height: 500px;
-    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 
         0 6px 20px 0 rgb(0 0 0 / 19%);
     background-color: #171D30;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 5rem;
+    background: -webkit-linear-gradient(rgb(92, 92, 92), rgb(48, 47, 47));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: gray;
+    background-clip: text;
+}
+
+ #start {
+    margin: 20px;
+    border: none;
+    height: 62px;
+    width: 138px;
+    background-image: url("./assets/startButton.jpg");
+}
+
+#start:hover {
+    background-image: url("./assets/startButton-hover.jpg");
+}
+
+#active-room {
+    width: 800px;
+    height: 400px;
+}
+
+#console-bar{
+    width: 800px;
+    height: 100px;
 }
 
 .cursor {

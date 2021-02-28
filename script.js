@@ -1,26 +1,27 @@
-const canvas = document.getElementById('game-canvas');
-const ctx = canvas.getContext('2d');
-canvas.width = 800;
-canvas.height = 500;
+const gameContainer = document.getElementById("game-container");
+// const activeRoom = gameContainer.getElementById("active-room");
+// const consoleBar = gameContainer.getElementById("consol-bar");
+let gamePosition = gameContainer.getBoundingClientRect();
 
-let gameFrame = 0;
-
-let canvasPosition = canvas.getBoundingClientRect();
+const cursor = document.querySelector(".cursor");
 
 const mouse = {
-    x: canvas.width/2,
-    y: canvas.height/2,
-    click: false; 
-}
+  x: gameContainer.width / 2,
+  y: gameContainer.height / 2,
+  click: false,
+};
 
-const cursor = document.querySelector('.cursor');
+document.getElementById("start").onclick = function () {
+  window.location.href = "/play.html";
+};
+// ?Uncaught TypeError: Cannot set property 'onclick' of null?
 
-canvas.addEventListener('mousemove', (event) => {
-    cursor.setAttribute('style', 'top: '+(event.pageY - 10)+'px; left: '(event.pageX - 10)+'px')
-})
+// document.getElementById("start").onhover = () => {
+//   this.src = "/assets/startButton-hover.jpg";
+// };
 
-canvas.addEventListener('mousedown', (event) => {
-    mouse.x = event.x - canvasPosition.left; 
-    mouse.y = event.y - canvasPosition.top;
+gameContainer.addEventListener("mousedown", (event) => {
+  mouse.x = event.x - gamePosition.left;
+  mouse.y = event.y - gamePosition.top;
+  mouse.click = true;
 });
-
