@@ -12,12 +12,12 @@ const mouse = {
 };
 
 document.getElementById("start").onclick = function () {
-  window.location.href = "/play.html";
+  window.location.href = "./play.html";
 };
 
-document.getElementById("start").onclick = gameStart () {
-  window.location.href = "/play.html";
-};
+// document.getElementById("start").onclick = gameStart () {
+//   window.location.href = "/play.html";
+// };
 //fix to only apply within /"index.html" doc?
 //  with an if statement, or change "document.getElementBy..." to specify?
 

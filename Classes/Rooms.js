@@ -1,6 +1,6 @@
 const roomsArray = [
-    {
-    name: bedShelf
-    background: "/images/shelf-background.jpg"
-    },
+  {
+    name: bedShelf,
+    background: "./images/shelf-background.jpg",
+  },
 ];
