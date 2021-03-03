@@ -15,6 +15,14 @@ const itemsArray = [
   },
 
   {
+    item: foxens - dish,
+    inspect: "", //inspect dialogue
+    interact: "", //interact dialogue
+    clickable: true,
+    image: "", //file location,
+  },
+
+  {
     item: dropperBottle,
     inspect: "", //inspect dialogue
     interact: "", //interact dialogue

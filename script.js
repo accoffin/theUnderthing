@@ -18,8 +18,15 @@ document.getElementById("start").onclick = function () {
 // document.getElementById("start").onclick = gameStart () {
 //   window.location.href = "/play.html";
 // };
-//fix to only apply within /"index.html" doc?
-//  with an if statement, or change "document.getElementBy..." to specify?
+
+function hideElement(elementID) {
+  let item = document.getElementById("elementID");
+  if (item.style.display === "none") {
+    item.style.display = "block";
+  } else {
+    item.style.display = "none";
+  }
+}
 
 gameContainer.addEventListener("mousedown", (event) => {
   mouse.x = event.x - gamePosition.left;

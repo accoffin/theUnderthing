@@ -65,6 +65,7 @@ h1 {
   width: 800px;
   height: 132px;
   background-image: url("/assets/textBox.png");
+  display: none;
   background-position: center;
   background-repeat: no-repeat;
 }
