@@ -1,71 +1,76 @@
 @font-face {
-    font-family: Adventurer;
-    src: url('/assets/Adventurer.ttf');
+  font-family: Adventurer;
+  src: url("/assets/Adventurer.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Adventurer;
-    /* cursor: url(), default; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Adventurer;
+  /* cursor: url(), default; */
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #252E4A;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252e4a;
 }
 
 #game-container {
-    width: 800px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 
-        0 6px 20px 0 rgb(0 0 0 / 19%);
-    background-color: #171D30;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-color: #171d30;
 }
 
 h1 {
-    margin: 20px;
-    font-size: 5rem;
-    background: -webkit-linear-gradient(rgb(92, 92, 92), rgb(48, 47, 47));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: gray;
-    background-clip: text;
+  margin: 20px;
+  font-size: 5rem;
+  background: -webkit-linear-gradient(rgb(92, 92, 92), rgb(48, 47, 47));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: gray;
+  background-clip: text;
 }
 
- #start {
-    margin: 20px;
-    border: none;
-    height: 62px;
-    width: 138px;
-    background-image: url("./assets/startButton.jpg");
+#start {
+  margin: 20px;
+  border: none;
+  height: 62px;
+  width: 138px;
+  font-size: 1.8rem;
+  background-image: url("./assets/blankStartButton.jpg");
 }
 
 #start:hover {
-    background-image: url("./assets/startButton-hover.jpg");
+  background-image: url("./assets/blankStartButton-hover.jpg");
+  color: rgb(92, 92, 92);
 }
 
 #active-room {
-    width: 800px;
-    height: 400px;
+  width: 800px;
+  height: 400px;
+  background-image: url("");
 }
 
-#console-bar{
-    width: 800px;
-    height: 100px;
+#console-bar {
+  width: 800px;
+  height: 132px;
+  background-image: url("/assets/textBox.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cursor {
-    width: 20px;
-    height: 20px;
-    position: absolute;
+  width: 20px;
+  height: 20px;
+  position: absolute;
 }

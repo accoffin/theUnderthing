@@ -14,11 +14,12 @@ const mouse = {
 document.getElementById("start").onclick = function () {
   window.location.href = "/play.html";
 };
-// ?Uncaught TypeError: Cannot set property 'onclick' of null?
 
-// document.getElementById("start").onhover = () => {
-//   this.src = "/assets/startButton-hover.jpg";
-// };
+document.getElementById("start").onclick = gameStart () {
+  window.location.href = "/play.html";
+};
+//fix to only apply within /"index.html" doc?
+//  with an if statement, or change "document.getElementBy..." to specify?
 
 gameContainer.addEventListener("mousedown", (event) => {
   mouse.x = event.x - gamePosition.left;
